@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+
+    <!-- Include the latest version of Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="todoApi.js"></script>
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Our To Do List:</h1>
+    <div class="addtodocontrols">
+        <label class="form-label" for="taskinput">What needs to be done?</label>
+        <div class="form-group">
+        <input class="form-control" type="text" id="taskinput">
+        </div>
+        <label class="form-label" for="ownerinput">Who's job is it?</label>
+        <div class="form-group">
+        <input class="form-control" type="text" id="ownerinput">
+        </div>
+        <button id="addtodo" class="btn btn-primary">Add Task</button>
+        <p id="errormsg" class="visually-hidden"></p>
+    </div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr class="table-dark"><th class="shrink">Created At</th><th class="shrink">Owner</th><th class="expand">Task</th><th class="shrink">Done</th></tr>
+        </thead>
+        <tbody id="todostable">
+        </tbody>
+    </table>
+</body>
+</html>

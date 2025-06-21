@@ -1,0 +1,31 @@
+body {
+    margin: 15px;
+}
+
+label {
+    margin: 10px;
+}
+button {
+    margin: 10px;
+}
+#noteinput {
+    width: 400px;
+}
+
+div.addtodocontrols {
+    display: flex;
+    align-items: center;
+}
+
+#errormsg {
+    color: red;
+    margin: 10px;
+}
+
+.shrink {
+    white-space: nowrap
+}
+.expand {
+    width: 99%;
+}
+

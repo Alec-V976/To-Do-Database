@@ -1,0 +1,14 @@
+{
+  "name": "todolist",
+  "description": "TODO List Web App - Server stores TODO items in a mongodb",
+  "main": "todoserver.mjs",
+  "type": "module",
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  }
+}
